@@ -1,0 +1,36 @@
+{
+	"name": "wb-package-boilerplate",
+	"version": "1.0.0",
+	"description": "Workerb package code sturucture generator",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode=production",
+		"watch": "webpack --mode=development --watch --progress"
+	},
+	"author": "workerB",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/preset-env": "^7.10.2",
+		"@types/workerb-api": "^1.0.2",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.1.0",
+		"babel-preset-env": "^1.7.0",
+		"morgan": "^1.10.0",
+		"ts-loader": "^7.0.5",
+		"typescript": "^4.1.3",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.11",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"dependencies": {
+		"@babel/core": "^7.10.2",
+		"babel-register": "^6.26.0",
+		"copy-webpack-plugin": "^6.0.2",
+		"uglifyjs-webpack-plugin": "^2.2.0",
+		"dotenv": "^8.2.0",
+		"drive-db": "^6.0.0",
+		"fs": "^0.0.1-security",
+		"whatwg-fetch": "^3.0.0",
+		"meta-json-generator": "workerb-io/meta-json-generator"
+	}
+}

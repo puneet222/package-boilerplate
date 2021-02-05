@@ -1,0 +1,23 @@
+name: Build
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: Git Ref (Optional)
+        required: false
+jobs:
+  main:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@master
+      - name: Yarn Install
+        run: |
+          yarn install
+      - name: Yarn Build
+        run: yarn build

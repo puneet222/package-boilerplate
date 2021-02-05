@@ -1,0 +1,16 @@
+# package directories
+node_modules
+package-lock.json
+jspm_packages
+.firebase
+firebase-debug.log
+yarn.lock
+.env
+.DS_Store
+.firebaserc
+data
+.next
+env.json
+
+.idea
+dist
